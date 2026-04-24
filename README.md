@@ -1,16 +1,76 @@
-# React + Vite
+# TechScribe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TechScribe is a modern, interactive, and professional-grade educational platform and compiler application. It provides comprehensive, structured learning paths for various technology stacks, alongside an integrated compiler for hands-on practice.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interactive Curriculum Engine:** Dynamic rendering of educational content, syntax examples, and advanced concepts for multiple tech stacks.
+- **Integrated Code Compiler:** Hands-on practice environment built directly into the platform.
+- **Dynamic References:** Context-aware YouTube video integrations and official documentation links (W3Schools, GeeksforGeeks, MDN) for every topic.
+- **Persistent Progress Tracking:** Keep track of your learning journey with local storage-based progress saving.
+- **User Feedback System:** Built-in CRUD capabilities for managing user feedback and continuous platform improvement.
+- **Premium Glassmorphic UI:** A visually stunning, modern interface featuring 3D ambient backgrounds, custom scrollbars, and edge-to-edge wave footer designs.
+- **Mobile Responsive:** Seamless learning experience across all devices.
 
-## React Compiler
+## 📚 Supported Curricula
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TechScribe offers detailed learning paths for:
+- **Frontend Core:** HTML5, CSS3, JavaScript (ES6+)
+- **Frontend Frameworks:** React, Redux, Tailwind CSS
+- **Backend & Full Stack:** MERN Stack, MEAN Stack, Python Full Stack (Flask/Django), .NET, Java
+- **Databases:** PostgreSQL, MySQL, MongoDB
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19, Vite
+- **Routing:** React Router v7
+- **Styling:** Vanilla CSS (Custom Design System, Glassmorphism)
+- **Icons:** Lucide React, React Icons
+- **Deployment:** Vercel (Configured for SPA routing)
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/         # Static assets and images
+├── components/     # Reusable UI components (Navbar, Footer, Feedback, etc.)
+├── contexts/       # React Context providers for global state
+├── data/           # Curriculum data and structural content
+├── hooks/          # Custom React hooks (e.g., useLocalStorage)
+├── pages/          # Main application views (Home, CourseView, CompilerPage)
+├── services/       # External API and compilation services
+├── styles/         # Global styles and design tokens
+└── utils/          # Helper functions and utilities
+```
+
+## 💻 Getting Started
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd TechScribe
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 🌐 Deployment
+
+This application is optimized for deployment on Vercel. A `vercel.json` configuration file is included to handle Single Page Application (SPA) routing fallback correctly.
+
+---
+*Designed with a focus on modern web aesthetics and interactive learning.*
